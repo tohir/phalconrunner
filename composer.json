@@ -7,7 +7,7 @@
         "smarty/smarty": "~3.1"
     },
     "keywords": ["phalcon", "framework"],
-    "homepage": "http://github.com/Seldaek/monolog",
+    "homepage": "http://github.com/tohir/phalconrunner",
     "license": "MIT",
     "authors": [{
         "name": "Tohir Solomons",
