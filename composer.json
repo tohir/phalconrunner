@@ -1,0 +1,21 @@
+{
+    "name": "tohir/phalconrunner",
+    "description": "Simple framework wrapper using Phalcon Micro, and either Smarty or Twig",
+    "require": {
+        "php": ">=5.3.9",
+        "ext-phalcon": ">=1.2.4",
+        "smarty/smarty": "~3.1"
+    },
+    "keywords": ["phalcon", "framework"],
+    "homepage": "http://github.com/Seldaek/monolog",
+    "license": "MIT",
+    "authors": [{
+        "name": "Tohir Solomons",
+        "email": "tohir@tohir.co.za"
+    }],
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+}
