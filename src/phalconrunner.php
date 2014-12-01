@@ -67,7 +67,16 @@ abstract class PhalconRunner
      */
     private function createPhalcon()
     {
-        return new \Phalcon\Mvc\Micro();
+        $di = new \Phalcon\DI\FactoryDefault();
+        
+        if (AppConfig::get('pp', 'usePhalconDatabaseObject') == 'on') {
+            //Set up the database service
+            $di->set('db', function(){
+                return new \Phalcon\Db\Adapter\Pdo\Mysql(AppConfig::getSection('database'));
+            });
+        }
+        
+        return new \Phalcon\Mvc\Micro($di);
     }
     
     public function run()
